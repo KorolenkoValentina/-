@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ігровий Світ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="top-menu">
+            <a href="#" class="guest-icon" id="guest-icon">
+                <img src="./img/гість.png" alt="Гість">
+            </a>
+            <a href="#about" class="menu-link" data-section="about">Про нас</a>
+            <a href="#games" class="menu-link" data-section="games">Ігри</a>
+            <a href="#stats" class="menu-link" data-section="stats">Статистика</a>
+            <a href="#contact" class="menu-link" data-section="contact">Контакти</a>
+            <div class="burger-menu">
+                <h2 class="gw">Gaming world</h2>
+            </div>
+            
+        </nav>
+    </header>
+    <div class="content">
+        <section id="about" class="section-content">
+            <h2>Про нас</h2>
+            <p>Вітаємо вас на нашому сайті "Ігровий Світ" – місці, де кожен геймер відчує себе як удома! Ми створили цю
+                платформу з метою об'єднати людей, які поділяють пристрасть до відеоігор. Незалежно від того, чи ви
+                досвідчений гравець із багаторічним стажем, чи новачок, який тільки відкриває для себе дивовижний світ
+                віртуальних пригод – тут ви знайдете щось цікаве та корисне.</p>
+            <p>Наша команда складається з професійних оглядачів, аналітиків та звичайних геймерів, які щодня досліджують
+                індустрію, тестують нові релізи та діляться своїми враженнями. Ми ретельно аналізуємо кожен проєкт, щоб
+                надати вам об'єктивні оцінки, корисні поради та розгорнуті огляди. Наша мета – допомогти вам обирати
+                лише найкращі ігри та проводити час із задоволенням.</p>
+            <p>Ми впевнені, що відеоігри – це більше, ніж просто розвага. Це окрема культура, яка об'єднує мільйони
+                людей по всьому світу. Саме тому ми створили платформу, де кожен може висловити свою думку, поділитися
+                враженнями, залишити відгук про улюблену гру, або ж навпаки – розповісти про розчарування. Ми цінуємо
+                кожного користувача і прагнемо зробити ваш досвід максимально приємним.</p>
+            <p>Окрім оглядів, ми пропонуємо регулярні новини про індустрію відеоігор. Ви завжди будете в курсі останніх
+                анонсів, оновлень та виходу нових ігор. Ми також висвітлюємо великі події, такі як E3, Gamescom та інші
+                геймерські виставки, щоб ви першими дізнавалися про найважливіші новинки.</p>
+            <p>Ще одна важлива частина нашого проєкту – це спільнота. У нас є тематичні форуми, чати та групи, де ви
+                можете знайти друзів для кооперативних ігор, обговорити стратегії проходження чи просто поспілкуватися з
+                однодумцями. Ми також проводимо конкурси, вікторини та онлайн-турніри з цінними призами, щоб кожен міг
+                випробувати свої сили та отримати нагороду.</p>
+            <p>Ми переконані, що успіх платформи залежить від її користувачів, тому постійно працюємо над покращенням
+                функціоналу сайту. Якщо у вас є ідеї або пропозиції, як зробити "Ігровий Світ" ще кращим, ми завжди раді
+                вислухати ваші думки. Ваша підтримка та активність – це наш головний стимул розвиватися далі!</p>
+            <p>Приєднуйтесь до нас вже сьогодні, створюйте свій обліковий запис, додавайте друзів, залишайте коментарі
+                та ставайте частиною великої родини геймерів. Разом ми зробимо цей світ ще яскравішим!</p>
+        </section>
+
+        <section id="games" class="section-content">
+            <h2>Популярні ігри</h2>
+            <div class="games-container">
+                <div class="game-card">
+                    <img src="./img/tw3.jpg" alt="The Witcher 3">
+                    <p>The Witcher 3 - Рейтинг: ⭐ 9.5/10</p>
+                    <p>Ціна: 399 грн</p>
+                </div>
+                <div class="game-card">
+                    <img src="./img/cp2077.jpg" alt="Cyberpunk 2077">
+                    <p>Cyberpunk 2077 - Рейтинг: ⭐ 8.7/10</p>
+                    <p>Ціна: 749 грн</p>
+                </div>
+                <div class="game-card">
+                    <img src="./img/er.jpg" alt="Elden Ring">
+                    <p>Elden Ring - Рейтинг: ⭐ 9.8/10</p>
+                    <p>Ціна: 1179 грн</p>
+                </div>
+                <div class="game-card">
+                    <img src="./img/rdr2.jpg" alt="Red Dead Redemption 2">
+                    <p>Red Dead Redemption 2 - Рейтинг: ⭐ 9.6/10</p>
+                    <p>Ціна: 1819 грн</p>
+                </div>
+            </div>
+            <p>Ці ігри — це лише частина нашого топу. Ми також аналізуємо нові релізи та ділимося рейтингами найкращих
+                проєктів.</p>
+        </section>
+        <section id="stats" class="section-content">
+            <button onclick="updateData('week')" style="background-color: blue;">Тиждень</button>
+            <button onclick="updateData('month')" style="background-color: blue;">Місяць</button>
+            <button onclick="updateData('year')" style="background-color: blue;">Рік</button>
+            <div class="stats">Відвідувачі:<span id="visitors">-</span></div>
+            <div class="stats">Реєстрація:<span id="registrations">-</span></div>
+            <div class="stats">Продажі:<span id="sales">-</span></div>
+            <div class="stats">Повернення:<span id="returns">-</span></div>
+            <h1 class="feedback" style="color: blue;">Нещодавні відгуки: </h1>
+            <div class="feedbacks">
+                <img class="feed-icon" src="./img/користувач1.jpg" alt="guest-icon"> 
+                <p class="pos-name-fb">Sasha:</p>
+                <p class="feedbacks-p">Все супер, швидко та якісно, без обману.</p>
+            </div>
+            <div class="feedbacks2">
+                <img class="feed-icon" src="./img/користувач2.jpg" alt="guest-icon"> 
+                <p class="pos-name-fb">Maria:</p>  
+                <p class="feedbacks-p">Давно шукала якісь сайти без обману і це самий найкращий варіант!</p>
+            </div>
+        </section>
+        <section id="contact" class="section-content">
+            <h2>Контакти</h2>
+            <p>Напишіть нам на пошту: <a href="mailto:games@example.com">games@example.com</a></p>
+            <p>Телефони підтримки:</p>
+            <ul>
+                <li>+380 50 123 45 67 (Техпідтримка)</li>
+                <li>+380 67 987 65 43 (Реклама та співпраця)</li>
+            </ul>
+            <p>Надіслати відгук:</p>
+            <ul>
+                <input type="text" id="feedback" name="feedback" required>
+                <button>Відправити</button>
+            </ul>
+            <p>Соціальні мережі:</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Discord</a></li>
+            </ul>
+        </section>
+        <section id="registration-form" class="section-content">
+            <h2>Форма реєстрації</h2>
+            <form id="form-registration" action="#" method="POST">
+                <label for="first-name">Ім'я:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <label for="last-name">Прізвище:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="dob">Дата народження:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="account-name">Ім'я аккаунту:</label>
+                <input type="text" id="account-name" name="account-name" required>
+                <label for="password-hint">Підсказка до пароля:</label>
+                <input type="text" id="password-hint" name="password-hint">
+                <label for="bank-card">Прикріпити дані банківської карти (не обов'язково):</label>
+                <a href="#bank-card-form" id="bank-card-link">Заповнити дані картки</a>
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </section>
+        <section id="bank-card-form" class="section-content">
+            <h2>Введіть дані вашої картки</h2>
+            <form id="form-bank-card" action="#" method="POST">
+                <label for="card-number">Номер картки:</label>
+                <input type="tel" id="card-number" placeholder="#### #### #### ####" maxlength="16" required>
+                <label for="expiration-date">Термін дії:</label>
+                <input type="month" id="expiration-date" name="expiration-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="tel" id="cvv" placeholder="###" maxlength="3" required>
+                <label for="card-holder">Власник карти:</label>
+                <input type="text" id="card-holder" name="card-holder" required>
+                <button type="submit">Зберегти картку</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
